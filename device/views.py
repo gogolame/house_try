@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from device.models import Devices
+<<<<<<< HEAD
 from django.http import HttpResponseServerError
 
 
@@ -28,3 +29,14 @@ def hab_config(request):
     context = {'devices': Devices.objects.all()}
     #devices = Devices.objects.order_by('room_type')
     return render(request, 'device/dev_list.html', context)
+=======
+
+def dev_list(request):
+    context = {
+    'devices' : Devices.objects.all()
+
+
+    }
+    #devices = Devices.objects.order_by('room_type')
+    return render(request, 'device/dev_list.html', context)
+>>>>>>> 77f1a1b2602a9cd7b679f64812aa35dda1ab8d04

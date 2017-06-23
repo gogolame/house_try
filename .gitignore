@@ -1,5 +1,10 @@
 *.pyc
 __pycache__
 myvenv
+<<<<<<< HEAD
 .DS_Store 
 db.sqlite3
+=======
+db.sqlite3
+.DS_Store 
+>>>>>>> 77f1a1b2602a9cd7b679f64812aa35dda1ab8d04
