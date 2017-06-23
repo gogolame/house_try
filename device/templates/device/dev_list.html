@@ -1,19 +1,19 @@
-<!-- 
+<!--
 {% block content %}
 
-	{{ devices }}
+    {{ devices }}
 
 
-	<ul>
-		{% for i in devices %}
-		<ul> 
-			<h1>{{ i.dev_name }}</h1>
-			<div>
-				{{ i.room_type}}
-			</div>
-		</ul>
-		{% endfor %}
-	</ul>
+    <ul>
+        {% for i in devices %}
+        <ul>
+            <h1>{{ i.dev_name }}</h1>
+            <div>
+                {{ i.room_type}}
+            </div>
+        </ul>
+        {% endfor %}
+    </ul>
 {% endblock %} -->
 
 
@@ -42,27 +42,27 @@
   <div class="container theme-showcase" role="main">
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
-  
+
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
-  
+
   <div>
         <h1>Дом Тест</h1>
         <p>Элементы уже имеющиеся в базе</p>
   </div>
   <table class="table">
-		<thead>
-				<tr>
-		    <!-- <th>номер</th> -->
-		        <th>Название комнаты</th>
-		        <th>Тип комнаты</th>
-		        <th>Название устройства</th>
-		        <th>Тип устройства</th>
-		        <th>Управляющее устройство</th>
-		        <th>Параметр 1</th>
-		        <th>Параметр 2</th>
-				</tr>
-		</thead>
+        <thead>
+                <tr>
+            <!-- <th>номер</th> -->
+                <th>Название комнаты</th>
+                <th>Тип комнаты</th>
+                <th>Название устройства</th>
+                <th>Тип устройства</th>
+                <th>Управляющее устройство</th>
+                <th>Параметр 1</th>
+                <th>Параметр 2</th>
+                </tr>
+        </thead>
             <tbody>
             {% for par in devices %}
               <tr>
@@ -78,56 +78,8 @@
             </tbody>
           </table>
         <div>
-        	<h3>Добавление</h3>
 
         </div>
-   		<div class=row><table1 class="table">
-   			<input type="text" class="w3-input w3-border w3-light-grey" size="20" placeholder="название помещения" >
-   			<label font-style: italic>Тип команаты :</label>
-   			<!-- <input type="text" size="20"> -->
-   			<select id="soflow" name="example">
-    			<option value="Прихожая">Прихожая</option>
-    			<option value="Коридор">Коридор</option>
-    			<option value="Гостинная">Гостинная</option>
-    			<option value="Ванная">Ванная</option>
-    			<option value="Туалет">Туалет</option>
-    			<option value="Санузел">Санузел</option>
-    			<option value="Кухня">Кухня</option>
-    			<option value="Гостинная">Гостинная</option>
-    			<option value="Спальня">Спальня</option>
-    			<option value="Детская">Детская</option>
-    			<option value="Балкон">Балкон</option>
-			</select>
-   			<!-- <input id="inputEmail" class="form-control" placeholder="название комнаты" required="" autofocus="" type="email"> -->
-   		</table1></div>
-   		<h3>Данные об устройствах</h3>
-		<div class=row><table1 class="table">
-			<select id="soflow" name="example" >
-    			<option value="Нагрузка 220В (канал SO)">Нагрузка 220В (канал SO)</option>
-    			<option value="Нагрузка 0-10В (канал AO)">Нагрузка 0-10В (канал AO)</option>
-    			<option value="Нагрузка 12-24В (Канал DO)">Нагрузка 12-24В (Канал DO)</option>
-			</select>
-   			<input type="text" class="w3-input w3-border w3-light-grey" size="15" placeholder="Название устройства" >
-   			<input type="text" class="w3-input w3-border w3-light-grey" size="15" placeholder="Управляющее устройство" >
-   			<input type="text" class="w3-input w3-border w3-light-grey" size="15" placeholder="Параметр 1" >
-   			<input type="text" class="w3-input w3-border w3-light-grey" size="15" placeholder="Параметр 2" >
-   			<!-- <input type="text" size="20"> -->
-   			
-   			<!-- <input id="inputEmail" class="form-control" placeholder="название комнаты" required="" autofocus="" type="email"> -->
-   		</table1></div>
-   		<p>
-        <button type="button" class="btn btn-lg btn-success">Добавить данные</button>
-        <button type="button" class="btn btn-lg btn-primary">Получить HAB-conf</button>
-        
-        <!-- <button type="button" class="btn btn-primary">Primary</button>
-        <button type="button" class="btn btn-success">Success</button>
-        <button type="button" class="btn btn-info">Info</button>
-        <button type="button" class="btn btn-warning">Warning</button>
-        <button type="button" class="btn btn-danger">Danger</button>
-        <button type="button" class="btn btn-link">Link</button> -->
-      	</p>
-	
-		
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
